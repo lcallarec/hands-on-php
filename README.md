@@ -26,8 +26,12 @@ If you're using VSCode :
 * Install PHP IntelliSense extension
 * Disable PHP › Suggest: Basic in your settings
 
-
 ### Rules
+
+#### 0. We're not writing test. But if you wish, you can enforce your code robustness by :
+
+* enforcing strict types checking at runtime by using `declare(strict_types=1);` before all declarations : it will checks types when invoking functions / methods coming from outside your current file scope.
+* using `composer stan` for static type checking
 
 #### 1. Create a command line application server which listen on an UDP socket and output datagrams messages it receives.
 
